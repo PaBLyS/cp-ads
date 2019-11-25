@@ -13,6 +13,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'js/three.min.js' },
+      { src: 'js/p5.min.js' },
+      { src: 'js/vanta.net.min.js' },
     ]
   },
   /*
