@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="first-wrap">
-            <canvas class="fon" id="fon"></canvas>
+            <div class="fon" id="fon"></div>
             <first-block/>
             <second-block/>
             <div class="arrow" @click="scrollArrow">
