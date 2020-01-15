@@ -100,7 +100,7 @@
   .form {
 
     &-wrap {
-      padding: 65px 115px;
+      padding: 30px 50px;
       background: #3F3169;
       box-shadow: 7px 30px 50px rgba(100, 47, 225, 0.16);
       border-radius: 25px;
@@ -185,6 +185,7 @@
 
       &.active {
         cursor: url('/coursor-hover.png') 4 4, pointer;
+
         .input {
           $border-active: 1px solid #0BFFB6;
           color: #0BFFB6;
@@ -272,6 +273,60 @@
           right: -2px;
           border-bottom: $border;
           border-right: $border;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .form {
+
+      &-wrap {
+        padding: 10px 25px 20px;
+      }
+
+      &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-btn-upload {
+          padding-left: 0;
+        }
+
+        &-input {
+
+          &:nth-child(2) {
+            margin-top: 20px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .form {
+
+      &-wrap {
+        padding: 10px 25px 20px;
+      }
+
+      &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-btn-upload {
+          padding-left: 0;
+        }
+
+        &-input {
+
+          &:nth-child(2) {
+            margin-top: 20px;
+            margin-left: 0;
+          }
         }
       }
     }

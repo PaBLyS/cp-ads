@@ -1,27 +1,27 @@
 <template>
-  <div class="wrap">
-    <ul class="wrap__list">
-      <li class="wrap__list-elem">
+  <div class="socialIcon">
+    <ul class="socialIcon__list">
+      <li class="socialIcon__list-elem">
         <a href="/">
           <img src="/social/fb.png">
         </a>
       </li>
-      <li class="wrap__list-elem">
+      <li class="socialIcon__list-elem">
         <a href="/">
           <img src="/social/tw.png">
         </a>
       </li>
-      <li class="wrap__list-elem">
+      <li class="socialIcon__list-elem">
         <a href="/">
           <img src="/social/inst.png">
         </a>
       </li>
-      <li class="wrap__list-elem">
+      <li class="socialIcon__list-elem">
         <a href="/">
           <img src="/social/in.png">
         </a>
       </li>
-      <li class="wrap__list-elem">
+      <li class="socialIcon__list-elem">
         <a href="/">
           <img src="/social/dou.png">
         </a>
@@ -37,9 +37,9 @@
 </script>
 
 <style lang="scss" scoped>
-  .wrap {
+  .socialIcon {
     width: 100%;
-    transform: translateX(100px);
+    margin: 35px 0;
 
     &__list {
       width: 100%;
@@ -54,10 +54,7 @@
         margin-right: 25px;
 
         a {
-
-          img {
-
-          }
+          cursor: url('/coursor-hover.png') 4 4, default;
         }
       }
     }

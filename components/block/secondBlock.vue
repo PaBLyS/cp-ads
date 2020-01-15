@@ -2,10 +2,10 @@
   <section>
     <b-container>
       <b-row>
-        <b-col cols="4"
+        <b-col md="4" cols="12"
                v-for="(elem, index) in elements"
                :key="index"
-               class="elem"
+               class="elemCrumb"
         >
           <crumb-point :imgUrl="elem.imgUrl" :content="elem.content"/>
         </b-col>
@@ -42,8 +42,7 @@
 </script>
 
 <style lang="scss" scoped>
-
-  .elem {
+  .elemCrumb {
     padding: 0;
   }
 </style>

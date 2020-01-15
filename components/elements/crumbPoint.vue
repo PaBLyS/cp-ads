@@ -1,9 +1,9 @@
 <template>
-  <div class="wrap">
-    <div class="wrap__img">
+  <div class="crumbPoint">
+    <div class="crumbPoint__img">
       <img :src="imgUrl">
     </div>
-    <p class="wrap__content">{{content}}</p>
+    <p class="crumbPoint__content">{{content}}</p>
   </div>
 </template>
 
@@ -18,7 +18,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .wrap {
+  .crumbPoint {
     position: relative;
     display: flex;
     flex-direction: column;

@@ -1,18 +1,18 @@
 <template>
-  <section class="wrap">
+  <section class="thankYou">
     <canvas class="fon" id="fon"></canvas>
-    <div class="wrap__logo">
+    <div class="thankYou__logo">
       <img src="logo.png">
     </div>
-    <div class="wrap__content">
-      <div class="wrap__content-label">
+    <div class="thankYou__content">
+      <div class="thankYou__content-label">
         THANK YOU!
       </div>
-      <div class="wrap__content-text">
+      <div class="thankYou__content-text">
         For sumbitting your request! <br>
         We will consider it and contact you soon.
       </div>
-      <a href="https://theadmasters.com/" class="wrap__content-a">
+      <a href="https://theadmasters.com/" class="thankYou__content-a">
         <span></span>
         Go to Corporate website
       </a>
@@ -393,9 +393,9 @@
     background: #221B37;
   }
 
-  .wrap {
+  .thankYou {
     margin: 0;
-    padding: 0;
+    padding: 30px;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -414,7 +414,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
 
       &-label {
         text-transform: uppercase;
@@ -503,6 +502,51 @@
         &:hover span:after {
           width: 49%;
           height: 45%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .thankYou {
+
+      &__content {
+
+        &-label {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .thankYou {
+
+      &__content {
+
+        &-label {
+          text-align: center;
+          font-size: 120px;
+          line-height: 140px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .thankYou {
+
+      &__content {
+
+        &-label {
+          text-align: center;
+          font-size: 80px;
+          line-height: 90px;
+        }
+
+        &-text {
+          font-size: 24px;
+          line-height: 26px;
         }
       }
     }
